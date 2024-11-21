@@ -24,6 +24,12 @@ navElements.forEach(element => {
     element.addEventListener("click", toggleNavbar);
 });
 
+window.addEventListener("resize", () => {
+    navButton.classList.remove("nav__btn--open");
+    navMenuContainer.classList.remove("nav__menu-mobile--open");
+    overlay.classList.remove("active");
+});
+
 
 // Slider
 
