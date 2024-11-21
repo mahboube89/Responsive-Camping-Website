@@ -584,8 +584,55 @@ input::placeholder {
 
 .emphasis {color:var(--accent-tertiary);}
 
+/*
+=====================
+    TOUR SEARCH     
+=====================
+*/
+
+.tour-search {border-radius: 5rem;}
+
+.tour-search__heading {margin: 4rem auto;}
+
+.tour-search__form {margin-bottom: 6rem;}
+
+.tour-search__field {margin-bottom: 2rem;}
+
+.tour-search__form .tour-search__label {
+    font-family: var(--primary-font);
+    color: var(--background-light);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
 
 
+.tour-search__form .tour-search__input{
+    background-color: var(--background-dark-alpha);
+    border: 1px solid var(--neutral-border);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.tour-search__form .tour-search__input::-webkit-datetime-edit {
+    color: var(--neutral-muted);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(40%) sepia(10%) saturate(800%) hue-rotate(210deg) brightness(85%);
+    opacity: 0.8;
+}
+
+.tour-search__input{width: 100%;}
+
+.tour-search__submit {
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -621,6 +668,22 @@ input::placeholder {
     .header__top {
         display: flex;
     }
+
+    /* Tour Search */
+    .tour-search__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+
+    .tour-search__field {margin-bottom: 0;}
+    
+    .tour-search__form .tour-search__submit{
+        grid-column: span 2;
+        margin-top: 2rem; 
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -661,6 +724,18 @@ input::placeholder {
 
     /* Header */
     .nav__menu {padding-right:5rem;}
+
+    /* Tour Search */
+    .tour-search__form .tour-search__label {font-size: 1.8rem;}
+
+    .tour-search__form {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .tour-search__form .tour-search__submit{
+        grid-column: span 1;
+    }
+    
 
 }
 
