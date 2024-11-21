@@ -26,12 +26,13 @@
 ---
 
 ## Setup and Usage
-    1- Clone the repository:
+1- Clone the repository:
+
 ```bash
 Copy code
 git clone git@github.com:mahboube89/Responsive-Camping-Website.git
 ```
-    2- Open index.html in your browser to view the website.
+2- Open index.html in your browser to view the website.
 
 ---
 
