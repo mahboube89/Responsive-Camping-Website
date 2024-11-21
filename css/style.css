@@ -1176,6 +1176,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
+/*
+=====================
+    CONTACT US    
+=====================
+*/
+.contact {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text {
+    max-width: 70%;
+    color: var(--background-light);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-btn {
+    margin-inline: auto;
+    margin-block-start: 24px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 
 
@@ -1321,9 +1346,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .destination-card__city { max-width: 20rem;}
 
     .slider {--slider-item: 3;}
-
-    
- 
 
 }
 
