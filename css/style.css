@@ -1034,6 +1034,149 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 25rem;
 }
 
+/*
+========================
+    CUSTOMER STORIES     
+========================
+*/
+
+.customer-stories {margin-top: 2rem;}
+
+.customer-stories__header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+
+/*
+    WIDGET
+---------------------
+*/
+.customer-stories__avatar-wrapper {
+    width: 50%;
+    display: flex;
+    min-width: 20rem;
+}
+
+.customer-stories__title {margin-block: 2rem;}
+
+.customer-stories__avatar {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+    border: 2px solid var(--background-dark);
+}
+
+.customer-stories__avatar:not(:first-child) { margin-left: -10px;}
+
+.customer-stories__avatar:is(:hover) {z-index: 2;}
+
+.customer-stories__avatar::before {
+    content: attr(data-content);
+    position: absolute;
+    bottom: 4.5rem;
+    left: 80%;
+    translate: -50% 10px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 2rem;
+    white-space: nowrap;
+    background-color: var(--neutral-muted);
+    transition: 0.3s;
+}
+
+.customer-stories__avatar:not(.customer__avatar-plus):hover::before {
+    opacity: 1;
+    visibility: visible;
+    translate: -50% 0;
+}
+
+.customer__avatar-plus {
+    display: grid;
+    place-items: center;
+    background-color: var(--neutral-light);
+    color: #1a1a1a;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.customer-stories__btn-all {
+    margin-block: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.customer-stories__list {
+    display: grid;
+    gap: 2rem;
+}
+
+.customer-stories__card {
+    position: relative;
+    height: 369px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: all 150ms ease-in-out;
+    border: 1px solid var(--neutral-border);
+}
+
+.customer-stories__card:where(:hover, :focus-visible){
+    transform: scale(0.99);
+    transition: transform 0.2s ease-in-out;
+}
+
+.customer-stories__card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, #00000000 33.33%, #000000cc 100%);
+    color: var(--neutral-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.customer-stories__card-title {font-size: 1.5rem;}
+
+.customer-stories__rating {
+    display: flex;
+    align-items: center;
+    margin-block-start: 1rem;
+}
+
+.customer-stories__rating-value {
+    margin-inline-start: 12px;
+    color: var(--neutral-light);
+}
+
+.customer-stories__card i {
+    font-size: 1.3rem;
+    color: var(--highlight-yellow);
+}
+
+.stories__card-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
 
 
 
@@ -1147,6 +1290,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .package__description,
     .package-booking > p { font-size: 1.5rem;}
 
+    /* Customer Stories */
+    .customer-stories__header { justify-content: space-between;}
+
+    .customer-stories__avatar{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .customer-stories__list { grid-template-columns: 1fr 1fr;}
+
+    .customer-stories__avatar:not(:first-child) { margin-inline-start: -20px}
+
 }
 
 
@@ -1166,6 +1321,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .destination-card__city { max-width: 20rem;}
 
     .slider {--slider-item: 3;}
+
+    
  
 
 }
@@ -1175,7 +1332,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .container {width: 105rem; /* 1050px */}
 
     /* Featured Destination */
-    .destination-card__city {max-width: 26rem;}
+    .destination-card__city {max-width: 26rem;}  
 
 }
 
@@ -1188,5 +1345,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     /* Featured Destination */
     .slider {--slider-item: 4;}
+
+    /* Customer Stories */
+    .customer-stories__avatar-wrapper {margin-left: 2rem;}
+
+    .customer-stories__list {grid-template-columns: repeat(12, 1fr);}
+
+    .customer-stories__card:where(:nth-child(1), :nth-child(6)) {grid-column: span 3;}
+
+    .customer-stories__card:where(:nth-child(3), :nth-child(5)) {grid-column: span 4;}
+
+    .customer-stories__card:where(:nth-child(2), :nth-child(4)) {grid-column: span 5;}
     
 }
