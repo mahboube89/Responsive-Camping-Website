@@ -728,7 +728,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
-
 .slider__btn i {
     font-size: 2rem;
     text-align: center;
@@ -805,7 +804,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 80%;
 }
 
-
 .destination-card__location {
     display: flex;
     align-items: baseline;
@@ -815,6 +813,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 1.5rem;
     margin-right: 0.8rem;
 }
+
 .destination-card__places-count { font-size: 1.2rem;}
 
 .destination-card__city {
@@ -824,6 +823,59 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     max-width: 320px;
 }
 
+/*
+=====================
+    OUR SERVICES    
+=====================
+*/
+
+.main__services-container{
+    overflow: hidden;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    color: var(--neutral-light); 
+}
+
+.main__service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-dark-alpha);
+    padding: 3rem 3.5rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+    border: 1px solid var(--neutral-border);
+    width: 36rem;
+}
+
+.circle-wrapper {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--accent-secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__service-logo {
+    height: 60%;
+    display: block;
+}
+
+.main__service-title {margin: 1.5rem 0 0.5rem 0;}
+
+.main__service-caption {
+    display: none;
+    max-width: 25rem;
+    max-height: 16rem;
+    overflow: hidden;
+    font-size: 1.8rem;
+    color: var(--neutral-muted);
+}
 
 
 
@@ -868,6 +920,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .tour-search__form .tour-search__submit{
         grid-column: span 2;
         margin-top: 2rem; 
+    }
+
+    /* Our Services */
+    .main__service{
+        height:26rem;
+        width: 30rem;
+    }
+
+    .main__service-caption {
+        display: block;
+      max-width: 25rem;
     }
 
 }
@@ -933,6 +996,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .destination-card__city { max-width: 20rem;}
 
     .slider {--slider-item: 3;}
+
+    /* Our Services */
+    .main__service-caption {font-size: 2rem;}
     
 
 }
