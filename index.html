@@ -133,30 +133,30 @@
             <section class="section tour-search">
                 <h2 class="heading tour-search__heading">Your Next Adventure Awaits</h2>
             
-                <form action="" class="tour-search__form">
+                <form action="" class="tour-search__form" id="destination-search">
             
                     <!-- Destination Search -->
                     <div class="tour-search__field">
                         <label for="destination" class="tour-search__label">Destination</label>
-                        <input type="text" name="destination" id="destination" class="tour-search__input" placeholder="Search for campsite, region, or location">
+                        <input type="text" name="destination" id="destination" class="tour-search__input" placeholder="Search for campsite, region, or location" autocomplete="off">
                     </div>
             
                     <!-- Number of People -->
                     <div class="tour-search__field">
                         <label for="people" class="tour-search__label">Number of People</label>
-                        <input type="number" name="people" id="people" class="tour-search__input" placeholder="Enter number of people" min="1">
+                        <input type="number" name="people" id="people" class="tour-search__input" placeholder="Enter number of people" min="1" autocomplete="off">
                     </div>
             
                     <!-- Check-in Date -->
                     <div class="tour-search__field">
                         <label for="checkin" class="tour-search__label">Check-In Date</label>
-                        <input type="date" name="checkin" id="checkin" class="tour-search__input" >
+                        <input type="date" name="checkin" id="checkin" class="tour-search__input"  autocomplete="bday">
                     </div>
             
                     <!-- Check-out Date -->
                     <div class="tour-search__field">
                         <label for="checkout" class="tour-search__label">Check-Out Date</label>
-                        <input type="date" name="checkout" id="checkout" class="tour-search__input">
+                        <input type="date" name="checkout" id="checkout" class="tour-search__input" autocomplete="bday">
                     </div>
             
                     <!-- Submit Button -->
@@ -840,9 +840,9 @@
                         <p class="newsletter__description">Subscribe to our newsletter and be the first to know about new destinations, special offers, and exciting stories from fellow campers.</p>
                     </div>
             
-                    <form action="#" method="">
+                    <form action="#" method="" id="newsletter">
                         <div class="newsletter__input-wrapper">
-                            <input type="email" name="email" id="newsletter-email" class="newsletter__input" placeholder="Enter your email" required>
+                            <input type="email" name="email" id="newsletter-email" class="newsletter__input" placeholder="Enter your email" required autocomplete="email">
                             <button type="submit" class="btn cta-btn">Subscribe</button>
                         </div>
                     </form>
