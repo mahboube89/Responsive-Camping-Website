@@ -1,0 +1,25 @@
+{
+  "name": "responsive-camping-website",
+  "version": "1.0.0",
+  "description": "## Description **Green Path** is a fully responsive camping website designed using HTML, CSS, and JavaScript. The project showcases a clean and modern user interface optimized for desktop and mobile devices. It features a variety of interactive elements like sliders, a burger menu, and a subscription form.",
+  "default": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahboube89/Responsive-Camping-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahboube89/Responsive-Camping-Website/issues"
+  },
+  "homepage": "https://github.com/mahboube89/Responsive-Camping-Website#readme",
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  }
+}
