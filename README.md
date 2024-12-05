@@ -35,6 +35,12 @@ git clone git@github.com:mahboube89/Responsive-Camping-Website.git
 
 ---
 
+### Screenshots
+
+![screenshot-1](./images/screenshots/screenshot-desktop-max.png)
+![screenshot-2](./images/screenshots/screenshot-desktop.png)
+![screenshot-3](./images/screenshots/screenshot-mobile.png)
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).  
