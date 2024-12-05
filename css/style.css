@@ -723,7 +723,13 @@ input::placeholder {
 
 .tour-search__form {margin-bottom: 6rem;}
 
-.tour-search__field {margin-bottom: 2rem;}
+.tour-search__field {
+
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .tour-search__form .tour-search__label {
     font-family: var(--primary-font);
